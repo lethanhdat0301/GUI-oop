@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" stylesheets="@../styles/chatapp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AppController">
+   <children>
+      <Pane prefHeight="71.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="53.0" layoutX="53.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/avatar.jpg" />
+               </image>
+            </ImageView>
+            <Circle fill="#1fff23" layoutX="95.0" layoutY="53.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <VBox layoutX="100.0" layoutY="12.0" prefHeight="31.0" prefWidth="68.0" />
+            <HBox layoutX="117.0" layoutY="35.0" prefHeight="27.0" prefWidth="94.0">
+               <children>
+                  <Label text="Online">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Circle fill="#ededed" layoutX="263.0" layoutY="36.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+            <ImageView fitHeight="57.0" fitWidth="50.0" layoutX="238.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/call.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#ededed" layoutX="319.0" layoutY="36.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+            <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="296.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/video.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#ededed" layoutX="376.0" layoutY="35.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+            <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="353.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="117.0" layoutY="14.0" prefHeight="27.0" prefWidth="73.0" text="Đạt" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox fx:id="chatVbox" prefHeight="408.0" prefWidth="400.0" styleClass="light-gray-background" />
+      <Pane prefHeight="68.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="messageText" layoutX="88.0" layoutY="16.0" opacity="0.55" prefHeight="39.0" prefWidth="171.0" styleClass="textfield-rounded" text=" Your message">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="53.0" styleClass="button-rounded" />
+            <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="18.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/image.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="266.0" layoutY="7.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="53.0" styleClass="button-rounded">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../images/mic.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="send" layoutX="333.0" layoutY="7.0" mnemonicParsing="false" onAction="#updateChatBox" prefHeight="58.0" prefWidth="53.0" styleClass="button-rounded">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@../images/send.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

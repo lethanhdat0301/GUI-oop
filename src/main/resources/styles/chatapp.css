@@ -1,0 +1,26 @@
+.light-gray-background {
+    -fx-background-color: #DADADA;
+}
+
+.textfield-rounded {
+    -fx-background-radius: 20px;
+    -fx-padding: 5px;
+}
+
+.button-rounded {
+    -fx-background-radius: 70;
+}
+
+.label-with-background {
+    -fx-background-color: #FFC0CB;
+    -fx-background-radius: 20px;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+}
+
+.newlabel-with-background {
+    -fx-background-color: #4169E1;
+    -fx-background-radius: 20px;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+}
